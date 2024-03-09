@@ -828,6 +828,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     singularName: 'experience';
     pluralName: 'experiences';
     displayName: 'Experience';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -840,6 +841,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     companyLogo: Attribute.Media & Attribute.Required;
     description: Attribute.Blocks & Attribute.Required;
     skillTag: Attribute.Blocks & Attribute.Required;
+    Role: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

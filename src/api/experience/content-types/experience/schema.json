@@ -4,7 +4,8 @@
   "info": {
     "singularName": "experience",
     "pluralName": "experiences",
-    "displayName": "Experience"
+    "displayName": "Experience",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,12 +29,12 @@
       "required": true
     },
     "companyLogo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "description": {
       "type": "blocks",
@@ -41,6 +42,10 @@
     },
     "skillTag": {
       "type": "blocks",
+      "required": true
+    },
+    "Role": {
+      "type": "string",
       "required": true
     }
   }
